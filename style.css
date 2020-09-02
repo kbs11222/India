@@ -1,0 +1,90 @@
+* body {
+  margin: 0;padding: 0;box-sizing: border-box;font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+  width: 100%;height: 100vh;
+  background-image:linear-gradient(rgba(0, 0,0,0.3),rgba(0,0,0,0.1)), url('taj.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav{
+  width: 100%;height:15vh;
+  background: rgba(0,0,0,0.2);
+  color:white;display: flex;justify-content: space-between;align-items: center;text-transform: uppercase;
+}
+
+nav.logo{
+  width: 25%;text-align: center;
+}
+
+nav.menu {
+  width: 25%;
+  text-decoration: none;color-interpolation: white;font-weight: bold;
+}
+
+nav.menu a{
+  width: 25%;
+  text-decoration: none;color: white;
+  font-weight: bold;
+}
+ nav.menu a:first-child{
+  color: #00b894;
+}
+nav.menu a:second-child{
+  color: #00b894;
+}
+ nav.menu a:third-child{
+  color: #00b894;
+}
+nav.menu a:forth-child{
+  color: #00b894;
+}
+nav.menu a:fifth-child{
+  color: #00b894;
+}
+nav.menu a:sixth-child{
+  color: #00b894;
+}
+
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+section h1{
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 10px 1px 5px black;
+  text-transform: uppercase;
+}
+
+section p {
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black
+}
+
+.change_content: after{
+  content: '';
+  color: #00b894;
+  animation: changetext 10s infinite linear;
+  color: #00b894;
+}
+
+@keyframes changetext{
+  0%{content: "Namaste";}
+  20%{content: "Vadakkam";}
+  35%{content: "Hyalo";}
+  60%{content: "Kem Cho";}
+  80%{content: "Sasriyakal";}
+  100%{content: "Adab";}
+}
