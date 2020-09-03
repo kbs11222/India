@@ -73,3 +73,19 @@ section p {
   margin-bottom: 25px;
   text-shadow: 1px 1px 1px black
 }
+
+img {
+   box-sizing: border-box;
+}/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
